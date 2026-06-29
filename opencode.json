@@ -14,5 +14,12 @@
     "patch": "ask",
     "todowrite": "ask",
     "webfetch": "ask"
+  },
+  "command": {
+    "commit": {
+      "template": "Git commit current changes, write comment as detail as possible.",
+      "description": "Do git commit",
+      "agent": "build"
+    }
   }
 }
