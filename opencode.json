@@ -5,15 +5,16 @@
   "formatter": true,
   "compaction": {
     "auto": true,
-    "prune": false,
-    "reserved": 20000
+    "prune": true,
+    "reserved": 10000
   },
   "permission": {
     "bash": "ask",
     "edit": "ask",
     "patch": "ask",
-    "todowrite": "ask",
-    "webfetch": "ask"
+    "webfetch": "allow",
+    "todowrite": "allow",
+    "external_directory": "ask"
   },
   "command": {
     "commit": {
