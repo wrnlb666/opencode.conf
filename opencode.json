@@ -10,8 +10,8 @@
   },
   "permission": {
     "bash": "ask",
-    "edit": "ask",
-    "patch": "ask",
+    "edit": "allow",
+    "patch": "allow",
     "webfetch": "allow",
     "todowrite": "allow",
     "external_directory": "ask"
