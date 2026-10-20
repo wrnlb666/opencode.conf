@@ -1,21 +1,206 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "autoupdate": false,
+  "update": "notify",
   "lsp": true,
   "formatter": true,
   "compaction": {
-    "auto": true,
-    "prune": true,
-    "reserved": 10000
+    "auto": true
   },
-  "permission": {
-    "bash": "ask",
-    "edit": "allow",
-    "patch": "allow",
-    "webfetch": "allow",
-    "todowrite": "allow",
-    "external_directory": "ask"
-  },
-  "command": {
-  }
+  "permissions": [
+    {
+      "action": "shell",
+      "resource": "*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "pwd *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "ls *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "cat *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "head *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "tail *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "wc *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "stat *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "file *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "du *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "df *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "rg *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "grep *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git status *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git diff *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git log *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git show *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git ls-files *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git ls-tree *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git rev-parse *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git blame *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git shortlog *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "git reflog show *",
+      "effect": "allow"
+    },
+    {
+      "action": "shell",
+      "resource": "rg *--pre*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "rg *--hostname-bin*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git diff *--output*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git log *--output*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git show *--output*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git diff *--ext-diff*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git log *--ext-diff*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git show *--ext-diff*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git diff *--textconv*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git log *--textconv*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "git show *--textconv*",
+      "effect": "ask"
+    },
+    {
+      "action": "shell",
+      "resource": "*>*",
+      "effect": "ask"
+    },
+    {
+      "action": "edit",
+      "resource": "*",
+      "effect": "allow"
+    },
+    {
+      "action": "edit",
+      "resource": "/*",
+      "effect": "ask"
+    },
+    {
+      "action": "webfetch",
+      "resource": "*",
+      "effect": "allow"
+    },
+    {
+      "action": "external_directory",
+      "resource": "*",
+      "effect": "allow"
+    }
+  ]
 }
